@@ -3,9 +3,10 @@
   <parent>
     <groupId>lumbah.springframework</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
   </parent>
   <artifactId>pet-clinic-data</artifactId>
+  <version>0.0.2-SNAPSHOT</version>
   <name>pet-clinic-data</name>
   
   <properties>
