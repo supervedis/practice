@@ -1,14 +1,7 @@
 package lumbah.springframework.petclinic.service;
 
-import java.util.Set;
-
 import lumbah.springframework.petclinic.model.Vet;
 
-public interface VetService {
+public interface VetService extends CrudService<Vet, Long>{
 
-	Vet findById(Long id);
-
-	Vet save(Vet owner);
-
-	Set<Vet> findAll();
 }
