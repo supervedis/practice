@@ -1,0 +1,209 @@
+.slider {
+    height: 70vh !important;
+}
+
+.slider .slides {
+    height: 70vh !important;
+}
+
+.slides img {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+.card-vision {
+    border-bottom: 0.3px solid black;
+}
+
+.mwij-para {
+    /* color: #84b315;
+    font-size: 1.5rem; */
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.section-mwij {
+    background: #89BF4A;
+}
+
+.mwij-about {}
+
+
+.services-text {}
+
+.btn-services {
+    color: #151515;
+    background-color: #eaeced;
+    border-color: transparent;
+    letter-spacing: .1em;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.digital-services-link {
+    color: #151515;
+}
+
+.btn-mwij {
+    background-color: #81c784;
+    color: white;
+}
+
+.btn-services:link {}
+
+.btn-services:visited {}
+
+.btn-services:hover {
+    color: #ffffff;
+    background-color: #81c784;
+}
+
+.btn-services:active {
+    color: #ffffff;
+    background-color: #81c784;
+}
+
+.btn-mwij:hover {
+    color: #ffffff;
+    background-color: #89BF4A;
+    border: 1px solid white;
+}
+
+.btn-mwij:active {
+    color: #ffffff;
+    background-color: #89BF4A;
+}
+
+.digital-services-link:hover {
+    color: #84b315;
+}
+
+.digital-services-link:active {
+    color: #84b315;
+}
+
+.btn-services:focus {}
+
+.heading-digital {
+    /* color: #84b315; */
+}
+
+.digital-solutions {
+    color: #84b315;
+}
+
+.services-heading {
+    font-size: 1.3rem;
+    font-weight: thin;
+}
+
+.section-choose {
+    height: 40vh;
+}
+
+
+/*----Services Page -----*/
+.section-showcase {
+    background-image: url('../img/soil.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-showcase {
+    font-weight: 400;
+}
+
+.services-description {
+    font-size: 1.2rem;
+}
+
+.section-services ul li {
+    margin-bottom: .3rem;
+}
+
+.container-services {
+    width: 90% !important;
+}
+
+.tabs .tab {
+    padding: 1px !important;
+}
+
+.tabs .tab a {
+    font-size: 12px !important;
+    padding: 0 5px !important;
+}
+
+.services-paragraph p {
+    line-height: 2rem;
+}
+
+.service-ul-feasibility {
+    margin-left: 30px !important;
+}
+
+.service-ul-feasibility li {
+    list-style-type: disc !important;
+}
+
+.tabs .indicator {
+    background-color: #89BF4A !important;
+}
+
+/* ----- About Us Page ------ */
+.mwij-para {
+    line-height: 2rem;
+}
+
+.section-about {
+    background: url(../img/about.jpg);
+}
+
+.section-vision {
+    margin-top: 10px ! important;
+    height: 50vh;
+}
+
+.para-objective {
+    text-align: left !important;
+}
+
+.section-background {
+    margin-top: 50px;
+}
+
+.section-background h4 {
+    font-weight: 300 !important;
+}
+
+.background-para {
+    text-align: left !important;
+    line-height: 2rem;
+}
+
+.indicators li {
+    list-style-type: disc !important;
+}
+
+.section-values {
+    background: #202F39;
+}
+
+.core-values {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+/* ---- Page Footer ---- */
+
+.page-footer .location li {
+    margin-bottom: 5px !important;
+}
+
+.icon-footer {
+    font-size: 1.2rem !important;
+    margin-right: 4px !important;
+}
