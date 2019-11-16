@@ -1,10 +1,21 @@
+.background {
+  background: url("../images/plans-background.jpg") center/cover;
+  filter: grayscale(40%);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
 .package {
     width: 70%;
-    height: 300px;
-    padding: 30px;
-    margin: 16px 0;
+    height: 19rem;
+    padding: 1.8rem;
+    margin: 3rem 0;
     border: 2px solid #0e4f1f;
     border-left: none;
+    position: relative;
+    overflow: hidden;
 }
 
 .package:hover,
@@ -35,7 +46,7 @@
 }
 
 main {
-    padding-top: 32px;
+    padding-top: 2rem;
 }
 
 #premium {
@@ -61,8 +72,39 @@ main {
 
 .package__info {
     background: white;
-    padding: 16px;
+    padding: 1rem;
     border: 1px solid #0e4f1f;
     color: #0e4f1f;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
+
+.package__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.8rem;
+    color: white;
+    background: #ff5454;
+    padding: 0.6rem;
+    margin: 0;
+    transform: rotateZ(45deg)  translateX(3rem) translateY(-0.6rem);
+    transform-origin: center;
+    width: 12rem;
+    text-align: center;
+}
+
+@media (min-width: 44rem){
+  main{
+      max-width: 1000px;;
+  }
+}
+
+@media (min-width: 1000px){
+    .package {
+        border-left: 2px solid #0e4f1f;
+    }
+
+    #free {
+        border-right: 2px solid #0e4f1f;
+    }
+  }
