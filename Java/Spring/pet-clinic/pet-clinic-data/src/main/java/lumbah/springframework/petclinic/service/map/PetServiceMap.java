@@ -2,9 +2,12 @@ package lumbah.springframework.petclinic.service.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import lumbah.springframework.petclinic.model.Pet;
 import lumbah.springframework.petclinic.service.CrudService;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long>{
 
 	@Override

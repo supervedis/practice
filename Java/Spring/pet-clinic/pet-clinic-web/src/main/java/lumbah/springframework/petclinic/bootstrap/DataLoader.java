@@ -7,8 +7,6 @@ import lumbah.springframework.petclinic.model.Owner;
 import lumbah.springframework.petclinic.model.Vet;
 import lumbah.springframework.petclinic.service.OwnerService;
 import lumbah.springframework.petclinic.service.VetService;
-import lumbah.springframework.petclinic.service.map.OwnerServiceMap;
-import lumbah.springframework.petclinic.service.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner{
@@ -16,9 +14,11 @@ public class DataLoader implements CommandLineRunner{
 	private final OwnerService ownerService;
 	private final VetService vetService;
 	
-	public DataLoader() {
-		ownerService = new OwnerServiceMap();
-		vetService = new VetServiceMap();
+	
+	public DataLoader(OwnerService ownerService, VetService vetService) {
+		super();
+		this.ownerService = ownerService;
+		this.vetService = vetService;
 	}
 	
 	@Override

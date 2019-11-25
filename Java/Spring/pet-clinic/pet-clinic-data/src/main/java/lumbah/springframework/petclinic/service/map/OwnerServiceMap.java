@@ -2,10 +2,12 @@ package lumbah.springframework.petclinic.service.map;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Service;
+
 import lumbah.springframework.petclinic.model.Owner;
-import lumbah.springframework.petclinic.service.CrudService;
 import lumbah.springframework.petclinic.service.OwnerService;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
 	@Override
