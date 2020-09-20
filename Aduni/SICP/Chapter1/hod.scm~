@@ -1,0 +1,55 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-advanced-reader.ss" "lang")((modname hod) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f () #f)))
+(define dx 0.001)
+
+(define (cube a)
+  (* a a a))
+
+(define (inc x)
+  (+ x 1))
+;------------------------------------------
+(define (pi-sum-next a)
+  (+ a 4))
+
+(define (add-dx x)
+  (+ x dx))
+
+;------------------------------------------
+(define (pi-sum-current a)
+  (/ 1.0 (* a (+ a 2.0))))
+
+(define (integral-current a)
+  (+ a (/ dx 2.0)))
+;------------------------------------------
+(define (sum term a next b)
+  (if ( > a b)
+      0
+      (+ (term a)                        
+         (sum term (next a) next b))))   
+                                        
+
+
+(define (sum-cubes a b)
+  (sum cube a inc b))
+
+(define (sum-integers a b)
+  (sum identity a inc b))
+
+(define (pi-sum a b)
+  (sum pi-sum-current a pi-sum-next b))
+
+(define (integral f a b)
+  (* (sum f (integral-current a) add-dx b)
+     dx))
+
+;(define (integral f a b dx)
+;(define (add-dx x)
+;(define (integral f a b dx)
+ ; (define (add-dx x) (+ x dx))
+  ;(* (sum f (+ a (/ dx 2.0)) add-dx b)
+   ;          dx))
+
+;(define (integral f a b dx) 
+ ; (define (add-dx x) (+ x dx))
+  ;(+ 1 dx))

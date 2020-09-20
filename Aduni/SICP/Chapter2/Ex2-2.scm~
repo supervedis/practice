@@ -1,0 +1,10 @@
+(define (make-segment start))
+
+(define (start-segment segment) (car segment))
+
+(define (end-segment segment) (cdr segment))
+
+(define (segment ))
+
+(define (make-point x-cord y-cord)
+  (cons x-cord y-cord))
