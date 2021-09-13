@@ -5,4 +5,8 @@ Java/IvorHorton/NestedClasses/.classpath
 Java/IvorHorton/NestedClasses/.project
 Java/IvorHorton/NestedClasses/.settings/org.eclipse.jdt.core.prefs
 Java/IvorHorton/NestedClasses/bin
-
+.classpath
+.project
+/build
+.settings/
+bin
